@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Dept.xml 在com.tarena.entity 包中  -->  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- namespace 的值是 DeptMapper 接口
+  每个Mapper 接口对应一个配置文件  -->
+<mapper namespace="cn.tedu.cloudnote.dao.BookDao">	
+	<select id="findByUserId" parameterType="String" 
+	resultType="cn.tedu.cloudnote.entity.Book" >
+		SELECT * from cn_notebook where cn_user_id=#{id}
+	</select>
+	<insert id="addBook" parameterType=
+	"cn.tedu.cloudnote.entity.Book">
+		INSERT into cn_notebook(cn_notebook_id,cn_notebook_name) 
+		value(#{cn_notebook_id},#{cn_notebook_name})  
+	</insert>
+</mapper>
+
+
+
+
+

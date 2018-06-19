@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/main/java/cn/tedu/cloudnote=UTF-8
+encoding//src/main/java/cn/tedu/cloudnote/service/UserServiceImpl.java=GBK
+encoding//src/main/java/cn/tedu/cloudnote/util/NoteUtil.java=UTF-8
+encoding//src/main/webapp/alert/alert_delete_note.html=UTF-8
+encoding//src/main/webapp/alert/alert_error.html=UTF-8
+encoding//src/main/webapp/alert/alert_note.html=UTF-8
+encoding//src/main/webapp/alert/alert_notebook.html=UTF-8
+encoding//src/main/webapp/edit.html=UTF-8
+encoding//src/main/webapp/log_in.html=UTF-8
+encoding//src/main/webapp/scripts/alert.js=UTF-8
+encoding/<project>=UTF-8
+encoding/src=UTF-8
