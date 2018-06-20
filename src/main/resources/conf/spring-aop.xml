@@ -17,9 +17,13 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 
 
-		<!-- 配置AOP注解扫描 -->
-		<context:component-scan base-package="cn.tedu.cloudnote.aspect"/>
-		<!-- 开启注解标记 -->
-		<aop:aspectj-autoproxy/>
+<bean id="loggerBean" class="cn.tedu.cloudnote.aspect.LoggerBean"></bean>
+		<aop:config>
+		<!-- 通过REF关联组件类 -->
+			<aop:aspect ref="loggerBean">
+				<aop:before method="logController" 
+				pointcut="within(cn.tedu.cloudnote..*)"/>
+			</aop:aspect>
+		</aop:config>
 </beans> 
 

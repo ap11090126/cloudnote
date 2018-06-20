@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
+import cn.tedu.cloudnote.service.UserService;
 import cn.tedu.cloudnote.service.UserServiceImpl;
 import cn.tedu.cloudnote.util.NoteResult;
 
@@ -14,7 +14,7 @@ import cn.tedu.cloudnote.util.NoteResult;
 @RequestMapping("/user")
 public class UserRegisterController {
 	@Resource 
-	private UserServiceImpl userService;
+	private UserService userService;
 	@RequestMapping("/add.do")
 	@ResponseBody
 	
